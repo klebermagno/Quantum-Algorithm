@@ -1,0 +1,11 @@
+version: "3.2"
+
+services:
+  qiskit:
+   build: .
+   ports:
+    - "8888:8888"
+   environment: 
+    - IBMQ_API_TOKEN = '0b77a3e4eff88c86fcd44a34e9963d89c4cfd130d757747770b267872c46b3208fb6db95aaefe58a687f901023d5fe3f0a93bc73d51d2245a1a8afc159095a87'
+   volumes: 
+    - ./quantic_alg:/ibmq/quantic_alg
